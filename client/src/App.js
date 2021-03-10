@@ -1,32 +1,19 @@
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+
 import "./App.css";
+import HomePage from "./components/pages/homepage/homepage-component";
+import Header from "./components/header/header-component";
 
-import React, { Component } from "react";
-import { CrystalList } from "./components/crystal-list/crystal-list.jsx";
-import CrystalDataServices from "./services/service";
-
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      crystals: [],
-    };
-  }
-  componentDidMount() {
-    CrystalDataServices.getAll().then((response) =>
-      this.setState({ crystals: response.data.crystals })
-    );
-  }
-
-  render() {
-    console.log(this.state.crystals);
-    return (
-      <div className="App">
-        <input type="search" placeholder="search for crystals"></input>
-        <h1>crystalized</h1>
-        <CrystalList crystals={this.state.crystals} />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+      </Switch>
+    </div>
+  );
 }
 
 export default App;

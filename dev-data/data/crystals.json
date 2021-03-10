@@ -4,32 +4,28 @@
     "purpose": ["peace", "grounding", "calming", "protection"],
     "color": "brown",
     "healing": "Grounds a person's energy in the present moment, bringing calmness and peace. Neutralizes negativity in the human energy field/aura. Counteracts the effects of radiation and protects home from negative energies.",
-    "slug": "smokey-quartz",
-    "photo": "smokey-quartz.png"
+    "slug": "smokey-quartz"
   },
   {
     "name": "Garnet",
     "purpose": ["vitality", "warmth", "love"],
     "color": "red",
     "healing": "Improves circulation through warmth and vitality and promotes positive feelings of love.",
-    "slug": "garnet",
-    "photo": "garnet.png"
+    "slug": "garnet"
   },
   {
     "name": "Golden Topaz",
     "purpose": ["clarity", "cleansing"],
     "color": "yellow",
     "healing": "Clarifies intent linked to higher purpose, helping a person pursue their true path. Clears head, improves concentration as well as clears the solar plexus chakra of negativity and supports elimination via the kidneys.",
-    "slug": "golden-topaz",
-    "photo": "golden-topaz.png"
+    "slug": "golden-topaz"
   },
   {
     "name": "Peridot",
     "purpose": ["neutralizing", "regeneration", "cleansing", "clarity"],
     "color": "green",
     "healing": "Neutralizes physical, emotional, or mental toxicity. Encourages tissue regeneration and supports liver and gall bladder function. Clears old life patterns to encourage new experiences. Strenghtens the heart and solar plexus chakras. Encourages mental clarity and clear decision making.",
-    "slug": "peridot",
-    "photo": "peridot.png"
+    "slug": "peridot"
   },
   {
     "name": "Aquamarine",
@@ -42,39 +38,34 @@
     ],
     "color": "blue",
     "healing": "Boots the thymus chakra and enhances immunity and keeps the bridge clear between the heart and throat chakras. Encourages creative verbal expression and harmonious communication. Soothes powerful feelings, such as grief or loneliness. Cools infection and reduces inflammation.",
-    "slug": "aquamarine",
-    "photo": "aquamarine.png"
+    "slug": "aquamarine"
   },
   {
     "name": "Amethyst",
     "purpose": ["purifying", "protection", "calming", "awareness"],
     "color": "purple",
     "healing": "Purifying, warding off negative influences and protects from environmental stress. Also calms the nervous system and the brain, easing headaches and migraines. Opens the third-eye and crown chakras, enhancing personal spiritual awakening.",
-    "slug": "amethyst",
-    "photo": "amethyst.png"
+    "slug": "amethyst"
   },
   {
     "name": "Rose Quartz",
     "purpose": ["soothing", "compassion", "love", "fertility"],
     "color": "pink",
     "healing": "Supports heart in all ways, easing emotional stress or regulating the physical effects of stress, such as panic attacks, as well as eases anxiety and fear, bringing the warmth of compassion and unconditional love to the system. Bathes the whole body with the healing ray of love. Encourages and awakens an appreciate of beauty and is said to increase fertility.",
-    "slug": "rose-quartz",
-    "photo": "rose-quartz.png"
+    "slug": "rose-quartz"
   },
   {
     "name": "Black Obsidian",
     "purpose": ["protection", "strength", "stability", "clarity", "focus"],
     "color": "black",
     "healing": "Deflects needy or draining energy from other people. Stimulates the root chakra, drawing in the earth's energy to strengthen and stabilize the system. Brings things to the surface that might have been otherwise hidden, making it a useful ally during a healing process. Cuts through deception, bringing clarity and focus.",
-    "slug": "black-obsidian",
-    "photo": "black-obsidian.png"
+    "slug": "black-obsidian"
   },
   {
     "name": "Selenite",
     "purpose": ["cleansing", "awareness"],
     "color": "white",
     "healing": "A conductor of energy, its cleansing effects can be strongly felt on the system. Allows flow of high frequency energy to permeate all the chakra centers, aligning them all with spiritual purpose. Resonates powerfully with the crown chakra, enabling enhanced awareness of enlightenment.",
-    "slug": "selenite",
-    "photo": "selenite.png"
+    "slug": "selenite"
   }
 ]

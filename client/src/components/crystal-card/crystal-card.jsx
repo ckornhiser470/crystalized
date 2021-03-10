@@ -1,20 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 
-import "./crystal-card.css";
+import "./crystal-card.scss";
+// import "../../../public/crystal_images/amber.png";
 
-const images = require.context("../../public/crystal_images", true);
 // import defaultImg from "../rose_quartz.png";
+export class CrystalCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hover: false };
+  }
+  toggleHover = () => {
+    this.setState({ hover: !this.state.hover });
+  };
 
-export const CrystalCard = (props) => {
-  console.log(props);
-  const image = images(`.${props.crystal.photo}`);
-  console.log(image);
-  const purpose = props.crystal.purpose.sort().join(", ");
-  return (
-    <div className="card-container">
-      <img src={image} alt="product" />
-      <p key={props.crystal.id}>{props.crystal.name}</p>
-      <em>{purpose}</em>
-    </div>
-  );
-};
+  render() {
+    const { id, name, purpose, slug, healing } = this.props;
+    const photoSrc = `/crystal_images/${slug}.png`;
+    let purposes = purpose.sort().join(", ");
+    return (
+      <div
+        className="card-container"
+        onMouseEnter={this.toggleHover}
+        onMouseLeave={this.toggleHover}
+      >
+        {this.state.hover ? (
+          <p key={id} className="healing-p">
+            {healing}
+          </p>
+        ) : (
+          <React.Fragment>
+            <img src={photoSrc} alt={slug} className="image" />
+            <div className="card-footer">
+              <p key={id}>{name}</p>
+              <em>{purposes}</em>
+            </div>
+          </React.Fragment>
+        )}
+      </div>
+    );
+  }
+}

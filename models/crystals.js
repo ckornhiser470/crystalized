@@ -27,6 +27,7 @@ const crystalSchema = new Schema({
         "pink",
         "black",
         "white",
+        "orange",
       ],
       message:
         "Crystals can be brown, red, yellow, green, blue, purple, pink, black, or white",
@@ -37,10 +38,6 @@ const crystalSchema = new Schema({
     required: true,
   },
   slug: {
-    type: String,
-    required: true,
-  },
-  photo: {
     type: String,
     required: true,
   },

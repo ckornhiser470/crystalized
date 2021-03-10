@@ -1,14 +1,14 @@
 import React from "react";
 import { CrystalCard } from "../crystal-card/crystal-card.jsx";
-import "./crystal-list.css";
+import "./crystal-list.scss";
 
 export const CrystalList = (props) => {
   const { crystals } = props;
 
   return (
     <div className="card-list">
-      {crystals.map((crystal) => (
-        <CrystalCard key={crystal.id} crystal={crystal} />
+      {crystals.map(({ id, ...otherSectionProps }) => (
+        <CrystalCard key={id} {...otherSectionProps} />
       ))}
     </div>
   );
