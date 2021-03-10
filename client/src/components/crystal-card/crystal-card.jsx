@@ -31,8 +31,10 @@ export class CrystalCard extends Component {
           <React.Fragment>
             <img src={photoSrc} alt={slug} className="image" />
             <div className="card-footer">
-              <p key={id}>{name}</p>
-              <em>{purposes}</em>
+              <p key={id} className="crystal-name">
+                {name}
+              </p>
+              <p className="crystal-purposes">{purposes}</p>
             </div>
           </React.Fragment>
         )}
